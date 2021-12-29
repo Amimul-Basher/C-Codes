@@ -1,0 +1,10 @@
+C language:
+	Moduler operation is not applicable for floating point number.
+	Can use fmod(x, y) from library math.h to for this case.
+	
+	To Set precision : printf("%.4f\n", x); show upto 4 decimal point.
+	Can use floor(x), ceil(x)
+	
+C++ language:
+	To set precision:
+	cout << fixed << setprecision(4) << x << endl; show upto 4 decimal point.

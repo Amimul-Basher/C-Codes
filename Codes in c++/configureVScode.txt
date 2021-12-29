@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=77v-Poud_io&t=17s&ab_channel=LearningLad
+To run c++ using terminal
+check g++ --version
+run g++ main.cpp
+run ./a.out
+
+or
+run g++ main.cpp -o output
+run ./output

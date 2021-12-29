@@ -1,0 +1,3 @@
+/home/amimul/CLionProjects/PracticeProblem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/amimul/CLionProjects/PracticeProblem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/amimul/CLionProjects/PracticeProblem/cmake-build-debug/CMakeFiles/PracticeProblem.dir
