@@ -89,5 +89,39 @@ int main(){
    }
 
    cout << endl;
+
+    int n = 10;
+    //initialization
+    vector<int> v(n,5);
+    for (int i = 0; i < n; i++){
+        cout << v[i] << " ";
+    }
+    cout << endl;
+    //initialization
+    //initializing 2 array as vector and sorting them according to the first array
+    vector<array<int,2>> v2(n);
+
+    for(int i = 0; i < n; i++){
+        if(i%2 ==0){
+            v2[i][0] = i*10+5;
+        }else{
+            v2[i][0] = i*25-7;
+        }
+    }
+    for(int i = 0; i < n; i++){
+        if(i%2 ==0){
+            v2[i][1] = i*100+5;
+        }else{
+            v2[i][1] = i*20-7;
+        }
+        
+    }
+
+    sort(v2.begin(), v2.end());
+    for(int i = 0; i < n; i++){
+        cout << v2[i][0] << " " << v2[i][1]<< endl;
+    }
+
+
    return 0;
 }
