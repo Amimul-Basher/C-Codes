@@ -2,6 +2,8 @@
 #include <cmath>
 #include <vector>
 
+//20146209 wifi password sumon
+
 using namespace std;
 
 void palindrom(string s){
@@ -30,9 +32,6 @@ void abbriviation(string E, string A){
 
     if(O == A) cout << "yes" << endl;
     else cout << "No" << endl;
-    for(int i = 0; i <= j; i++){
-
-    }
     
  }
 

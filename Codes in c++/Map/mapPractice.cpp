@@ -55,6 +55,9 @@ int main(){
         strmap[letter]++;
     }
 
+    // auto x = strmap.find('z');
+    
+
     for(auto itr = strmap.begin(); itr!= strmap.end(); itr++){
         cout << itr-> first << ": " << itr -> second << endl;
     }
