@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=HqPJF2L5h9U&t=1471s&ab_channel=AbdulBari
+
 #include<vector>
 #ifndef HEAP
 #define HEAP
@@ -23,11 +25,11 @@ int leftchild_index(int index){
 int rightchild_index(int index){
     return ((index+1)*2);
 }   
-
+//max heap insertion
 void insert(int n){
-    int parentindex;
-    vct.push_back(n);
-    int index = vct.size()-1;
+    int parentindex;     
+    vct.push_back(n);      //inserting at the end initially
+    int index = vct.size()-1;  // taking its index which is last index
     while(find_parent_index(index) >= 0){
         parentindex = find_parent_index(index);
         if(vct[parentindex] < vct[index]){
