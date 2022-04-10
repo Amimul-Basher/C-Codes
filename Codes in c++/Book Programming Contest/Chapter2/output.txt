@@ -1,0 +1,6 @@
+X= 4 Y= 2 1
+X and Y : 0
+X or Y : 6
+X xor Y : 6
+X << Y : 16
+X >> Y : 1

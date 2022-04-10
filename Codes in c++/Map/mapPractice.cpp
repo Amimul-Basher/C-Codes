@@ -47,17 +47,21 @@ int main(){
 
     for (int m = 0; m < text.length(); m++){
         char letter = text[m];
-    // strmap.find(keyValue) function returns an iterator of that key value position
-        if(strmap.find(letter) == strmap.end()){ 
-            strmap[letter] = 0;
-        }
+        // strmap.find(keyValue) function returns an iterator of that key value position
+        // if(strmap.find(letter) == strmap.end()){ 
+        //     strmap[letter] = 0;
+        // }
         // for this specific letter or key value the corresponding value get increased.
         strmap[letter]++;
     }
 
+    // auto x = strmap.find('z');
+    
+
     for(auto itr = strmap.begin(); itr!= strmap.end(); itr++){
         cout << itr-> first << ": " << itr -> second << endl;
     }
-
+    
+    cout << strmap.size() << endl;
     return 0;
 }

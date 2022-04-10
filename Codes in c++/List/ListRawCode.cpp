@@ -23,6 +23,7 @@ void createNodes(node *temphead, int n){
     }
 }
 
+
 void listTraverse(node *tempHead){
     node *temp;
     temp = tempHead;

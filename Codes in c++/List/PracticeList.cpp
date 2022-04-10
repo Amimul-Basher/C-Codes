@@ -10,6 +10,7 @@ void showList(list<int> list2){
     for(auto itr = list2.begin(); itr != list2.end(); itr++){
         cout << *itr << " ";
     }
+    cout << endl;
 }
 
 int main(){
@@ -32,6 +33,7 @@ int main(){
     }
     list1.reverse();
 
+    cout << "\nAfter reversing the list" << endl;
     showList(list1);
     
     return 0;
