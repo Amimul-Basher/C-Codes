@@ -1,0 +1,9 @@
+Sum of all elements of this tree: 33
+
+Preorder
+4 4 1 8 7 9 
+Inorder
+1 4 4 7 8 9 
+Postorder
+1 4 7 9 8 4 
+The height of this tree is : 2

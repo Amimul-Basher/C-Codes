@@ -86,8 +86,11 @@ int main() {
 
     sum = myTree.sumTree(root);
     cout << "Sum of all elements of this tree: " << sum << endl;
+    cout << "\nPreorder\n";
 	myTree.preOrder(root);
+    cout << "\nInorder\n";
     myTree.inOrder(root);
+    cout << "\nPostorder\n";
     myTree.postOrder(root);
     cout << "\n";
     int height  = myTree.heightTree(root);
