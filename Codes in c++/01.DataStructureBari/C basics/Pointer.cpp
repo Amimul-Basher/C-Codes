@@ -16,5 +16,29 @@ int main (){
 
     cout << "The value stored in that location where p is pointing at: " << *p << endl;
     
+
+    //Pointing to an array
+    int A[] = {1,2,3,4,5};
+    //Array itself is a pointer to the stream of data. So the "&" should not be used
+    int *r = A;
+    //For different data types the pointer size does not vary
+    cout << "Size of pointer for all data types :" << sizeof(r) << endl;
+    for(int i = 0; i < sizeof(r)/sizeof(int); i++){
+        cout << r[i] << " ";
+    }
+
+
+    cout << "\n...............................Dynamic memory allocation..............................." << endl;
+
+    int *m;
+    m = (int *)malloc(5* sizeof(int)); //Memory allocation for 5 integer
+    for(int i = 0;i < 5; i++){
+        m[i] = i;
+    }
+    for(int i = 0;i < 5; i++){
+        cout << m[i] << " ";
+    }
+
+
     return 0;
 }
