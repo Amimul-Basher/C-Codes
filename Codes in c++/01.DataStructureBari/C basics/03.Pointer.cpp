@@ -15,6 +15,11 @@ int main (){
     cout << "Pointer pointing to an address after assignment : " << p << endl;
 
     cout << "The value stored in that location where p is pointing at: " << *p << endl;
+
+    a = 20;
+    cout << "after reassigning the value of a we get pointer p equals" << *p << endl;
+    *p = 30;
+    cout << "Changing the value throught pointer. Then a and pointer p is " << a << " "<< *p << endl;
     
 
     //Pointing to an array
@@ -32,6 +37,8 @@ int main (){
 
     int *m;
     m = (int *)malloc(5* sizeof(int)); //Memory allocation for 5 integer
+
+    //m= new int[5]; Declaration in c++
     for(int i = 0;i < 5; i++){
         m[i] = i;
     }
@@ -39,6 +46,12 @@ int main (){
         cout << m[i] << " ";
     }
 
+    //For big project it's important to deallocate the memory
+    delete [] p; //for an array
+    // delete p; //for simple variable
+
+    // free(p); //in c
+    
 
     return 0;
 }

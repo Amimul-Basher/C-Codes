@@ -11,5 +11,6 @@ int main(){
     for(int x:arr){
         cout << x << endl;
     }
+    
     return 0;
 }
