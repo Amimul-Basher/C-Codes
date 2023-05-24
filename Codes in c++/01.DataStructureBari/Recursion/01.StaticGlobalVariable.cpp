@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+
+//for recursion global variable acts as static ones
 int x = 0;
 int checkGlobal(int n){
     if(n>0){
@@ -9,6 +11,7 @@ int checkGlobal(int n){
     return 0;
 }
 
+//Static variable is declared in the main method only once
 int checkStatic(int n){
     static int z = 0;
     if(n>0){

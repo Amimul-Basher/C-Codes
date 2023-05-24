@@ -38,7 +38,10 @@ int main(){
     cout << "Head Recursion output" << endl;
     headRecursion(n);
 
-    
+    int e = 3;
+    for(int i = 0 ; i< e; ++i){
+        cout << i << endl;
+    }
 
     cout << "\nTree Recursion output" << endl;
     treeRecursion(n);
