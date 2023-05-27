@@ -10,8 +10,12 @@ int main (){
     int *q = NULL;  //null pointer
 
 
-    int a = 10;
-    p = &a;
+    int a = 10; //declaration
+    p = &a;  //assignment
+
+    int b = 100;
+    int *r = &b; //declaration and assignment
+
     cout << "Pointer pointing to an address after assignment : " << p << endl;
 
     cout << "The value stored in that location where p is pointing at: " << *p << endl;
