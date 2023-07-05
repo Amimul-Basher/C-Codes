@@ -7,6 +7,7 @@ void backtrack(vector<vector<int>> &list, vector<int> &tempList, int (&arr)[3], 
     
     list.push_back(tempList);
     for(int i = start; i < sizeof(arr)/sizeof(int); i++){
+        if(i>start && arr[i] == arr[i-1]) continue;
         tempList.push_back(arr[i]);
         backtrack(list, tempList, arr, i+1);
         tempList.pop_back();
@@ -14,7 +15,7 @@ void backtrack(vector<vector<int>> &list, vector<int> &tempList, int (&arr)[3], 
 }
 
 int main(){
-    int arr[] = {1,4,8};
+    int arr[] = {4,4,8};
 
     
     vector<vector<int>> list;
