@@ -19,10 +19,10 @@ public:
     void display();
     // Calling this destructor delays the program to be executed
     // Calling destructor runs the code in debug mode
-    ~Diagonal()
-    {
-        delete[] A;
-    }
+    // ~Diagonal()
+    // {
+    //     delete[] A;
+    // }
 };
 
 void Diagonal::set(int i, int j, int value)
