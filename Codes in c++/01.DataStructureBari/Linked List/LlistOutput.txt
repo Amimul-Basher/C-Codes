@@ -1,0 +1,9 @@
+5 4 10 12 1 
+
+Number of elements: 5
+Sum linkedlist: 32
+Maximum number: 12
+Recursive way to max: 12
+Ten found in the list: 1
+5 4 10 12 1 
+5 4 10 12 1 
