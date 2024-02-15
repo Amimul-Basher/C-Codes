@@ -12,12 +12,6 @@ struct Polinomial{
     List *list;
 };
 
-Polinomial add_polinomial(Polinomial p1, Polinomial p2){
-    Polinomial p3;
-
-    return p3;
-}
-
 
 int evaluate_polinomial(Polinomial polinomial, int x){
     int sum = 0;
