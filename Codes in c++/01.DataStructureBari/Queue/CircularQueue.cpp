@@ -19,6 +19,11 @@ class Queue{
     void display();
 };
 
+
+//if you push rear front that must be in between 0 to size.
+//In This algorithm the front and rear is always behind the insetion and deletion point***
+//When it starts enque it leaves the 0 index as empty
+
 void Queue::enque(int x){
     int temp = (rear+1)%(size);
     
@@ -31,10 +36,9 @@ void Queue::enque(int x){
 }
 
 int Queue:: deque(){
-    int temp = (front)%(size);
+    int temp = (front+1)%size;
     if(temp == rear) cout << "Queue is empty\n";
     else{
-        temp = (front+1)%(size);
         front = temp;
         temp = arr[front];
         arr[front] = -1;
